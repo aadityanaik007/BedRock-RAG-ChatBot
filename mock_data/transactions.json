@@ -1,0 +1,18 @@
+[
+  {
+    "transaction_id": "TXN-9001",
+    "session_id": "SES-1002",
+    "status": "pending",
+    "gateway_status": "successful",
+    "amount": 18.0,
+    "currency": "USD"
+  },
+  {
+    "transaction_id": "TXN-9002",
+    "session_id": "SES-1003",
+    "status": "successful",
+    "gateway_status": "successful",
+    "amount": 12.0,
+    "currency": "USD"
+  }
+]

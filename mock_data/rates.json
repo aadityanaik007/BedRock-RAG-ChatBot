@@ -1,0 +1,14 @@
+[
+  {
+    "garage_id": "GAR-01",
+    "standard_rate": 20.0,
+    "validated_rate": 12.0,
+    "event_rate": null
+  },
+  {
+    "garage_id": "GAR-02",
+    "standard_rate": 15.0,
+    "validated_rate": 10.0,
+    "event_rate": 8.0
+  }
+]

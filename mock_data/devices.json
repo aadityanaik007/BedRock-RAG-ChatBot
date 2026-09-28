@@ -1,0 +1,12 @@
+[
+  {
+    "garage_id": "GAR-01",
+    "exit_device_status": "offline",
+    "last_seen": "2026-09-26T18:05:00"
+  },
+  {
+    "garage_id": "GAR-02",
+    "exit_device_status": "online",
+    "last_seen": "2026-09-26T19:20:00"
+  }
+]
