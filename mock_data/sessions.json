@@ -3,18 +3,433 @@
     "session_id": "SES-1002",
     "customer_id": "CUS-501",
     "garage_id": "GAR-01",
-    "status": "active",
+    "plate": "8ABC123",
+    "status": "closed",
     "entry_time": "2026-09-26T18:10:00",
     "exit_time": null,
-    "plate": "8ABC123"
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T18:10:00",
+        "source": "lpr",
+        "plate_read": "8ABC123",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9001"]
   },
   {
     "session_id": "SES-1003",
     "customer_id": "CUS-502",
     "garage_id": "GAR-02",
+    "plate": "7XYZ456",
     "status": "closed",
     "entry_time": "2026-09-26T17:00:00",
     "exit_time": "2026-09-26T19:15:00",
-    "plate": "7XYZ456"
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T17:00:00",
+        "source": "lpr",
+        "plate_read": "7XYZ456",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T19:15:00",
+        "source": "lpr",
+        "plate_read": "7XYZ456",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9002"]
+  },
+  {
+    "session_id": "SES-1004",
+    "customer_id": "CUS-503",
+    "garage_id": "GAR-04",
+    "plate": "6LMN789",
+    "status": "active",
+    "entry_time": "2026-09-26T11:00:00",
+    "exit_time": null,
+    "validation": {
+      "merchant": "Westfield Food Court",
+      "validated_at": "2026-09-26T12:30:00"
+    },
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T11:00:00",
+        "source": "lpr",
+        "plate_read": "6LMN789",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T13:40:00",
+        "source": "lpr",
+        "plate_read": "6LMN789",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": "session_close_failed: timeout writing session record at 2026-09-26T13:40:05",
+    "transaction_ids": []
+  },
+  {
+    "session_id": "SES-1005",
+    "customer_id": "CUS-504",
+    "garage_id": "GAR-05",
+    "plate": "5DEF123",
+    "status": "active",
+    "entry_time": "2026-09-26T08:30:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T08:30:00",
+        "source": "lpr",
+        "plate_read": "5DEF123",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T12:10:00",
+        "source": "lpr",
+        "plate_read": "5DEF1Z3",
+        "confidence": 0.41,
+        "matched": false
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": []
+  },
+  {
+    "session_id": "SES-1006",
+    "customer_id": "CUS-505",
+    "garage_id": "GAR-01",
+    "plate": "4GHI234",
+    "status": "closed",
+    "entry_time": "2026-09-26T09:00:00",
+    "exit_time": "2026-09-26T11:30:00",
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T09:00:00",
+        "source": "lpr",
+        "plate_read": "4GHI234",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T11:30:00",
+        "source": "lpr",
+        "plate_read": "4GHI234",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9003", "TXN-9004"]
+  },
+  {
+    "session_id": "SES-1007",
+    "customer_id": "CUS-506",
+    "garage_id": "GAR-02",
+    "plate": "3JKL345",
+    "status": "closed",
+    "entry_time": "2026-09-27T07:00:00",
+    "exit_time": "2026-09-27T09:20:00",
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T07:00:00",
+        "source": "lpr",
+        "plate_read": "3JKL345",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-27T09:20:00",
+        "source": "lpr",
+        "plate_read": "3JKL345",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9005", "TXN-9006"]
+  },
+  {
+    "session_id": "SES-1008",
+    "customer_id": "CUS-507",
+    "garage_id": "GAR-03",
+    "plate": "2MNO456",
+    "status": "active",
+    "entry_time": "2026-09-26T16:30:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T16:30:00",
+        "source": "lpr",
+        "plate_read": "2MNO456",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9007"]
+  },
+  {
+    "session_id": "SES-1009",
+    "customer_id": "CUS-508",
+    "garage_id": "GAR-06",
+    "plate": "1PQR567",
+    "status": "active",
+    "entry_time": "2026-09-27T08:00:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T08:00:00",
+        "source": "lpr",
+        "plate_read": "1PQR567",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9008"]
+  },
+  {
+    "session_id": "SES-1010",
+    "customer_id": "CUS-509",
+    "garage_id": "GAR-04",
+    "plate": "9STU678",
+    "status": "active",
+    "entry_time": "2026-09-27T10:00:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T10:00:00",
+        "source": "lpr",
+        "plate_read": "9STU678",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9009"]
+  },
+  {
+    "session_id": "SES-1011",
+    "customer_id": "CUS-510",
+    "garage_id": "GAR-02",
+    "plate": "8VWX789",
+    "status": "active",
+    "entry_time": "2026-09-27T14:00:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T14:00:00",
+        "source": "lpr",
+        "plate_read": "8VWX789",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9010"]
+  },
+  {
+    "session_id": "SES-1012",
+    "customer_id": "CUS-511",
+    "garage_id": "GAR-01",
+    "plate": "7YZA890",
+    "status": "active",
+    "entry_time": "2026-09-27T12:00:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T12:00:00",
+        "source": "lpr",
+        "plate_read": "7YZA890",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9011"]
+  },
+  {
+    "session_id": "SES-1013",
+    "customer_id": "CUS-512",
+    "garage_id": "GAR-04",
+    "plate": "6BCD901",
+    "status": "closed",
+    "entry_time": "2026-09-26T10:00:00",
+    "exit_time": "2026-09-26T15:20:00",
+    "validation": {
+      "merchant": "Cineplex Westfield",
+      "validated_at": "2026-09-26T14:50:00"
+    },
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T10:00:00",
+        "source": "lpr",
+        "plate_read": "6BCD901",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T15:20:00",
+        "source": "lpr",
+        "plate_read": "6BCD901",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9012"]
+  },
+  {
+    "session_id": "SES-1014",
+    "customer_id": "CUS-513",
+    "garage_id": "GAR-03",
+    "plate": "5EFG012",
+    "status": "closed",
+    "entry_time": "2026-09-26T17:45:00",
+    "exit_time": "2026-09-26T19:00:00",
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T17:45:00",
+        "source": "lpr",
+        "plate_read": "5EFG012",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T19:00:00",
+        "source": "lpr",
+        "plate_read": "5EFG012",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9013"]
+  },
+  {
+    "session_id": "SES-1015",
+    "customer_id": "CUS-514",
+    "garage_id": "GAR-06",
+    "plate": "4HIJ123",
+    "status": "closed",
+    "entry_time": "2026-09-26T07:30:00",
+    "exit_time": "2026-09-26T18:00:00",
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-26T07:30:00",
+        "source": "lpr",
+        "plate_read": "4HIJ123",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-26T18:00:00",
+        "source": "lpr",
+        "plate_read": "4HIJ123",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9014"]
+  },
+  {
+    "session_id": "SES-1016",
+    "customer_id": "CUS-515",
+    "garage_id": "GAR-06",
+    "plate": "3KLM234",
+    "status": "active",
+    "entry_time": "2026-09-27T09:15:00",
+    "exit_time": null,
+    "validation": null,
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T09:15:00",
+        "source": "lpr",
+        "plate_read": "3KLM234",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": []
+  },
+  {
+    "session_id": "SES-1017",
+    "customer_id": "CUS-516",
+    "garage_id": "GAR-05",
+    "plate": "2NOP345",
+    "status": "closed",
+    "entry_time": "2026-09-27T09:00:00",
+    "exit_time": "2026-09-27T13:30:00",
+    "validation": {
+      "merchant": "St. Mary's Outpatient Clinic",
+      "validated_at": "2026-09-27T13:10:00"
+    },
+    "events": [
+      {
+        "type": "entry",
+        "time": "2026-09-27T09:00:00",
+        "source": "lpr",
+        "plate_read": "2NOP345",
+        "confidence": 0.97,
+        "matched": true
+      },
+      {
+        "type": "exit",
+        "time": "2026-09-27T13:30:00",
+        "source": "lpr",
+        "plate_read": "2NOP345",
+        "confidence": 0.97,
+        "matched": true
+      }
+    ],
+    "processing_error": null,
+    "transaction_ids": ["TXN-9015"]
   }
 ]

@@ -2,17 +2,316 @@
   {
     "transaction_id": "TXN-9001",
     "session_id": "SES-1002",
+    "created_at": "2026-09-26T21:05:00",
+    "amount": 18.0,
+    "currency": "USD",
     "status": "pending",
     "gateway_status": "successful",
-    "amount": 18.0,
-    "currency": "USD"
+    "gateway_reference": "gw_ch_1001",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1002-1",
+    "settled": true
   },
   {
     "transaction_id": "TXN-9002",
     "session_id": "SES-1003",
+    "created_at": "2026-09-26T19:12:00",
+    "amount": 24.0,
+    "currency": "USD",
     "status": "successful",
     "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1002",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "mastercard",
+      "last4": "5100",
+      "expiry": "03/29"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1003-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9003",
+    "session_id": "SES-1006",
+    "created_at": "2026-09-26T11:25:10",
+    "amount": 18.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1003",
+    "error_code": "client_timeout",
+    "error_message": "App timed out waiting for the gateway response and retried the payment automatically.",
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1006-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9004",
+    "session_id": "SES-1006",
+    "created_at": "2026-09-26T11:25:42",
+    "amount": 18.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1004",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 2,
+    "idempotency_key": "idem-SES-1006-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9005",
+    "session_id": "SES-1007",
+    "created_at": "2026-09-27T09:12:00",
+    "amount": 24.0,
+    "currency": "USD",
+    "status": "failed",
+    "gateway_status": "failed",
+    "gateway_reference": "gw_ch_1005",
+    "error_code": "card_declined",
+    "error_message": "Issuer declined the card: do not honor. Authorization hold released.",
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1007-1",
+    "settled": false
+  },
+  {
+    "transaction_id": "TXN-9006",
+    "session_id": "SES-1007",
+    "created_at": "2026-09-27T09:14:30",
+    "amount": 24.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1006",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "mastercard",
+      "last4": "5100",
+      "expiry": "03/29"
+    },
+    "attempt_number": 2,
+    "idempotency_key": "idem-SES-1007-2",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9007",
+    "session_id": "SES-1008",
+    "created_at": "2026-09-26T20:40:00",
+    "amount": 40.0,
+    "currency": "USD",
+    "status": "failed",
+    "gateway_status": "failed",
+    "gateway_reference": "gw_ch_1007",
+    "error_code": "insufficient_funds",
+    "error_message": "Card declined: insufficient funds.",
+    "payment_method": {
+      "type": "card",
+      "brand": "amex",
+      "last4": "0005",
+      "expiry": "07/27"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1008-1",
+    "settled": false
+  },
+  {
+    "transaction_id": "TXN-9008",
+    "session_id": "SES-1009",
+    "created_at": "2026-09-27T13:00:00",
+    "amount": 15.0,
+    "currency": "USD",
+    "status": "failed",
+    "gateway_status": "failed",
+    "gateway_reference": "gw_ch_1008",
+    "error_code": "expired_card",
+    "error_message": "Card declined: card expired 08/26.",
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "1881",
+      "expiry": "08/26"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1009-1",
+    "settled": false
+  },
+  {
+    "transaction_id": "TXN-9009",
+    "session_id": "SES-1010",
+    "created_at": "2026-09-27T12:30:00",
+    "amount": 15.0,
+    "currency": "USD",
+    "status": "failed",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1009",
+    "error_code": "db_update_timeout",
+    "error_message": "Gateway charge succeeded but the transaction record update timed out.",
+    "payment_method": {
+      "type": "card",
+      "brand": "mastercard",
+      "last4": "5100",
+      "expiry": "03/29"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1010-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9010",
+    "session_id": "SES-1011",
+    "created_at": "2026-09-27T16:05:00",
+    "amount": 24.0,
+    "currency": "USD",
+    "status": "pending",
+    "gateway_status": "pending",
+    "gateway_reference": "gw_ch_1010",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1011-1",
+    "settled": false
+  },
+  {
+    "transaction_id": "TXN-9011",
+    "session_id": "SES-1012",
+    "created_at": "2026-09-27T13:50:00",
     "amount": 12.0,
-    "currency": "USD"
+    "currency": "USD",
+    "status": "failed",
+    "gateway_status": "not_found",
+    "gateway_reference": null,
+    "error_code": "payment_service_unavailable",
+    "error_message": "Payment service returned 503 before the request was sent to the gateway.",
+    "payment_method": {
+      "type": "card",
+      "brand": "amex",
+      "last4": "0005",
+      "expiry": "07/27"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1012-1",
+    "settled": false
+  },
+  {
+    "transaction_id": "TXN-9012",
+    "session_id": "SES-1013",
+    "created_at": "2026-09-26T15:15:00",
+    "amount": 25.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1012",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1013-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9013",
+    "session_id": "SES-1014",
+    "created_at": "2026-09-26T18:55:00",
+    "amount": 40.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1013",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "mastercard",
+      "last4": "5100",
+      "expiry": "03/29"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1014-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9014",
+    "session_id": "SES-1015",
+    "created_at": "2026-09-26T17:55:00",
+    "amount": 33.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1014",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "expiry": "11/28"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1015-1",
+    "settled": true
+  },
+  {
+    "transaction_id": "TXN-9015",
+    "session_id": "SES-1017",
+    "created_at": "2026-09-27T13:25:00",
+    "amount": 10.0,
+    "currency": "USD",
+    "status": "successful",
+    "gateway_status": "successful",
+    "gateway_reference": "gw_ch_1015",
+    "error_code": null,
+    "error_message": null,
+    "payment_method": {
+      "type": "card",
+      "brand": "amex",
+      "last4": "0005",
+      "expiry": "07/27"
+    },
+    "attempt_number": 1,
+    "idempotency_key": "idem-SES-1017-1",
+    "settled": true
   }
 ]

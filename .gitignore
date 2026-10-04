@@ -11,3 +11,9 @@ wheels/
 
 # Environment variables / secrets
 .env
+
+# Logs and test output
+logs/
+.coverage
+htmlcov/
+.pytest_cache/

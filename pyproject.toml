@@ -8,3 +8,16 @@ dependencies = [
     "boto3>=1.43.103",
     "mcp[cli]>=2.2.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+markers = [
+    "live: calls real AWS Bedrock; skipped unless RUN_LIVE_TESTS=1",
+    "stdio: launches the MCP server as a subprocess over stdio",
+]
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", ".venv/*"]
