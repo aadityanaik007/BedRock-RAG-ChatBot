@@ -72,7 +72,7 @@ for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-if user_input := st.chat_input("Ask about a parking session, payment, rate or device..."):
+if user_input := st.chat_input("Ask about a parking session, payment, rate or device...."):
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
         st.markdown(user_input)
